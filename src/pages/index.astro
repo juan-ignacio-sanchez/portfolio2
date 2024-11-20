@@ -6,14 +6,140 @@ import Card from "../components/Card.astro";
 <Layout title="Juan Ignacio">
   <main>
     <h1>Juan Ignacio Sánchez</h1>
-    <h3>Software Developer</h3>
+    <h2>About Me</h2>
     <p class="instructions">
-      Based in Montevideo, Uruguay, I have 9+ years of experience working with
-      Python/Django and similar backend technologies. I recently rediscovered
-      the beauty of frontend development and started my journey with React,
-      NextJS and Astro. Take a look around 👉 to know more about my experience,
-      tools I've used in the past and more about myself.
+      Based in Montevideo, Uruguay, I bring over 9 years of experience
+      specializing in Python, Django, and backend technologies. Recently, I’ve
+      rekindled my passion for frontend development, diving into React, Next.js,
+      and Astro to build modern, user-friendly interfaces. <br /><br />Feel free
+      to explore 👉 to learn more about my professional journey, the tools I’ve
+      mastered, and a little more about who I am!
     </p>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+
+      <div class="job">
+        <h4>Limit Wholesale Brokers | May 2022 - Present</h4>
+        <ul>
+          <li>
+            Built and maintained integrations with 10+ third-party APIs using
+            Python/Django.
+          </li>
+          <li>
+            Established communication channels to effectively reduce unforeseen
+            changes in external API integration.
+          </li>
+          <li>
+            Collaborated with API consumers to improve incident response and
+            reduce debugging clutter.
+          </li>
+          <li>
+            Authored the integration with Trava Security to provide risk
+            assessment reports.
+          </li>
+        </ul>
+        <p>
+          <em
+            >The interesting part of this project was finding common patterns
+            among Carrier requirements to minimize users' burden.</em
+          >
+        </p>
+        <p>
+          <em
+            >Integration tests were a pain point, solved by prioritizing the
+            most valuable ones to balance quality and deadlines.</em
+          >
+        </p>
+      </div>
+
+      <div class="job">
+        <h4>Rootstrap | Jan 2020 - Jan 2022</h4>
+        <p>
+          At Rootstrap, I joined multiple teams across various projects.
+          Highlights include:
+        </p>
+        <div class="project">
+          <h4>Phylagen</h4>
+          <p>
+            Phylagen, a San Francisco-based biotech company, combines microbial
+            genomics and data analytics to solve complex problems. I:
+          </p>
+          <ul>
+            <li>
+              Built microservices from scratch using Django, HUG, Flask, and
+              occasionally AWS Lambda.
+            </li>
+            <li>Integrated these microservices into a complex ETL pipeline.</li>
+          </ul>
+        </div>
+        <div class="project">
+          <h4>Sentry DashCam</h4>
+          <p>
+            The Sentry DashCam app & Wireless Bridge (Elon-1) enable Tesla
+            owners to wirelessly view their Tesla Sentry alarm systems and
+            manage DashCam videos. I:
+          </p>
+          <ul>
+            <li>
+              Configured Raspberry Pi boards to act as USB gadgets collecting
+              DVR data.
+            </li>
+            <li>
+              Optimized video data using FFmpeg, enabling streaming capabilities
+              via a REST API built with Flask.
+            </li>
+            <li>
+              Automated server setup with bash scripting for easy user
+              installation of pre-packaged system images.
+            </li>
+            <li>
+              Handled limited Raspberry Pi computing power by optimizing FFmpeg
+              using C/C++.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <h4>Hipcam | Jun 2018 - Jan 2020</h4>
+        <p>
+          Hipcam, based in Buenos Aires, develops smart home security systems. I
+          worked on:
+        </p>
+        <ul>
+          <li>
+            Video processing services (on-demand clip generation with watermark
+            and timestamps).
+          </li>
+          <li>User and camera tracking modules using Python/Django.</li>
+          <li>
+            Real-time camera data consumption modules using Python/Tornado.
+          </li>
+          <li>
+            Maintaining the face-recognition microservice and contributing to
+            infrastructure (AWS, DVR servers).
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>Cilan | Jun 2014 - May 2018</h4>
+        <p>
+          At Cilan, an IT solutions company in Uruguay, I worked as a full-stack
+          developer, specializing in:
+        </p>
+        <ul>
+          <li>
+            Building applications using Django, Django Rest Framework, and
+            KnockoutJS.
+          </li>
+          <li>Database management with PostgreSQL and MySQL.</li>
+          <li>Providing services like VoIP and web development.</li>
+        </ul>
+      </div>
+    </section>
+
     <ul role="list" class="link-card-grid">
       <Card
         href="https://github.com/juan-ignacio-sanchez/awstanding/"
@@ -57,6 +183,9 @@ import Card from "../components/Card.astro";
       height: auto;
       z-index: -1;
     }
+    .timespan {
+      color: gray;
+    }
     h1 {
       font-size: 4rem;
       font-weight: 700;
@@ -64,6 +193,7 @@ import Card from "../components/Card.astro";
       text-align: center;
       margin-bottom: 0.5em;
     }
+    h2,
     h3 {
       text-align: center;
     }
